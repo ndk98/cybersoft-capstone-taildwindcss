@@ -1,2 +1,5 @@
 # Dependency directories
 node_modules/
+
+# Files
+src/css/output.css
