@@ -3,19 +3,37 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: Inter Variable,
-        Inter,
-        ui-sans-serif,
-        system-ui,
-        sans-serif,
-        apple color emoji,
-        segoe ui emoji,
-        Segoe UI Symbol,
-        noto color emoji;
+  font-family: Inter Variable, Inter, ui-sans-serif, system-ui, sans-serif,
+    apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+}
+/* Tạo container chung để căn giữa cả màn hình */
+.container {
+  @apply mx-auto px-5 py-10;
+}
+
+/* màu chính */
+.primary-color {
+  color: #4338ca;
+}
+/* Feature */
+.feature {
+}
+
+/* short-desc */
+.short-desc {
+  background-color: #4338ca;
+  padding: 30px 0;
+}
+.short-desc button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 30px;
+  color: #4338ca;
 }
