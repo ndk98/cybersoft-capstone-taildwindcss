@@ -17,7 +17,7 @@
                     >
                         <a
                             href="#"
-                            class="text-lg flex items-center transition rounded-full px-2 -ml-2"
+                            class="text-lg flex items-center transition rounded-full px-2 -ml-2 lg:basis-1/4"
                         >
                             <span class="font-bold text-indigo-600">Astro</span>
                             <span class="text-slate-600">ship</span>
@@ -27,96 +27,127 @@
                             >
                         </a>
                         <div
-                            class="items-center justify-between gap-32 hidden w-full lg:flex lg:w-auto"
+                            class="items-center justify-between order-last hidden w-full lg:flex lg:justify-around lg:basis-3/4 lg:order-2 lg:w-auto"
                             id="navbar-sticky"
                         >
                             <ul
-                                class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white"
+                                class="flex flex-col relative font-medium lg:flex-row lg:items-center lg:gap-3 lg:p-0"
                             >
-                                <li>
+                                <li class="group">
                                     <a
-                                        data-dropdown-toggle="dropdownNavbar"
                                         href="#"
-                                        class="nav-item"
-                                        aria-current="page"
-                                        >Pages</a
-                                    >
+                                        class="nav-item items-center gap-1 py-2 lg:px-3 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo"
+                                        data-dropdown="dropdown-menu"
+                                        >Pages
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="3"
+                                            stroke="currentColor"
+                                            class="dropdown-icon w-3 h-3 mt-0.5 open:rotate-180"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                                            ></path>
+                                        </svg>
+                                    </a>
                                     <!-- Dropdown menu -->
                                     <div
-                                        id="dropdownNavbar"
-                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                                        id="dropdown-menu"
+                                        class="z-10 hidden font-normal border-l border-slate-200 origin-top-left lg:absolute lg:border-0 lg:w-48 lg:left-0"
                                     >
                                         <ul
-                                            class="py-4 text-sm text-gray-700 dark:text-gray-400"
+                                            class="py-2 px-3 text-sm text-gray-700 lg:bg-white lg:rounded-md lg:shadow lg:border"
                                             aria-labelledby="dropdownLargeButton"
                                         >
-                                            <li>
+                                            <li class="py-1">
                                                 <a
                                                     href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    class="text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded"
                                                     >Features</a
                                                 >
                                             </li>
-                                            <li>
+                                            <li class="py-1">
                                                 <a
                                                     href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    class="text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded"
                                                     >Integrations</a
                                                 >
                                             </li>
-                                            <li>
+                                            <li class="py-1">
                                                 <a
                                                     href="#"
-                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    class="text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded"
                                                     >Blog Details</a
                                                 >
                                             </li>
+                                            <li class="py-1">
+                                                <a
+                                                    href="#"
+                                                    class="text-sm text-gray-600 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded"
+                                                    >404 Pag</a
+                                                >
+                                            </li>
                                         </ul>
-                                        <div class="py-1">
-                                            <a
-                                                href="#"
-                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                                >404 Page</a
-                                            >
-                                        </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-item">Pricing</a>
+                                    <a
+                                        href="#"
+                                        class="nav-item py-2 lg:px-3 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo"
+                                        >Pricing</a
+                                    >
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-item">About</a>
+                                    <a
+                                        href="#"
+                                        class="nav-item py-2 lg:px-3 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo"
+                                        >About</a
+                                    >
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-item">Blog</a>
+                                    <a
+                                        href="#"
+                                        class="nav-item py-2 lg:px-3 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo"
+                                        >Blog</a
+                                    >
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-item">Contact</a>
+                                    <a
+                                        href="#"
+                                        class="nav-item py-2 lg:px-3 hover:text-indigo-600 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo"
+                                        >Contact</a
+                                    >
                                 </li>
                             </ul>
-                            <div class="">
+                            <div class="flex items-center gap-4">
                                 <a
                                     href="#"
-                                    class="text-sm px-2 py-1 transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
+                                    class="text-sm text-center px-5 py-2 transition w-full bg-gray-100 hover:bg-gray-200 border-2 border-transparent rounded-full lg:bg-white lg:hover:bg-white lg:border-0 lg:w-auto lg:px-2 lg:py-1"
                                     >Login</a
                                 >
                                 <a
                                     href="#"
-                                    class="rounded-full text-center transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center group gap-px"
+                                    class="flex flex-column items-center px-5 py-2 transition w-full bg-indigo-600 text-white hover:bg-indigo-800 group gap-px rounded-full lg:px-4 lg:w-auto"
                                 >
-                                    <span>Try for Free</span>
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                        class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                            clip-rule="evenodd"
-                                        ></path>
-                                    </svg>
+                                    <span class="flex items-center mx-auto">
+                                        <span>Try for Free</span>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -124,25 +155,31 @@
                             <button
                                 data-collapse-toggle="navbar-sticky"
                                 type="button"
-                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
                                 aria-controls="navbar-sticky"
                                 aria-expanded="false"
                             >
                                 <span class="sr-only">Open main menu</span>
                                 <svg
+                                    fill="currentColor"
                                     class="w-4 h-4 text-gray-800"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 17 14"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    xmlns="https://www.w3.org/2000/svg"
                                 >
+                                    <title>Toggle Menu</title>
                                     <path
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M1 1h15M1 7h15M1 13h15"
-                                    />
+                                        class="astronav-close-icon astronav-toggle hidden"
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"
+                                    ></path>
+                                    <path
+                                        class="astronav-open-icon astronav-toggle"
+                                        fill-rule="evenodd"
+                                        d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"
+                                    ></path>
                                 </svg>
                             </button>
                         </div>
@@ -208,5 +245,7 @@
 
         <!-- FLOWBITE -->
         <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+        <script src="./js/main.js"></script>
     </body>
 </html>
