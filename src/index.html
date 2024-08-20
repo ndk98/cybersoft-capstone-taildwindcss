@@ -1,68 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astroship Pro</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Astroship Pro</title>
 
-    <link rel="stylesheet" href="./css/output.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header"></header>
-
-    <main class="main">
-      <!-- BANNER -->
-      <section class="banner"></section>
-
-      <!-- PACKAGE -->
-      <section class="package"></section>
-
-      <!-- CLIENT -->
-      <section class="client"></section>
-
-      <!-- FEATURE -->
-      <section class="feature">
-        <div class="container">
-          <div class="title">
-            <h1 class="text-4xl font-bold">
-              Everything you need to
-              <span class="text-4xl primary-color font-bold"
-                >start a website</span
-              >
-            </h1>
-            <p class="text-xl text-gray-600 mt-3">
-              Astro comes batteries included. It takes the best parts of
-              state-of-the-art tools and adds its own innovations.
-            </p>
-          </div>
-          <div class="content">
-            <div class="image">
-              <img src="./images/package-1.png" alt="" />
+        <link rel="stylesheet" href="./css/output.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <nav class="bg-white fixed w-full z-20 top-0 start-0">
+                    <div
+                        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+                    >
+                        <a
+                            href="#"
+                            class="text-lg flex items-center transition rounded-full px-2 -ml-2"
+                        >
+                            <span class="font-bold text-indigo-600">Astro</span>
+                            <span class="text-slate-600">ship</span>
+                            <span
+                                class="uppercase mt-0.5 leading-none text-[10px] ml-1 font-bold bg-gray-200 text-slate-700 px-2 py-1 rounded-md"
+                                >pro</span
+                            >
+                        </a>
+                        <div
+                            class="items-center justify-between gap-32 hidden w-full lg:flex lg:w-auto"
+                            id="navbar-sticky"
+                        >
+                            <ul
+                                class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white"
+                            >
+                                <li>
+                                    <a
+                                        data-dropdown-toggle="dropdownNavbar"
+                                        href="#"
+                                        class="nav-item"
+                                        aria-current="page"
+                                        >Pages</a
+                                    >
+                                    <!-- Dropdown menu -->
+                                    <div
+                                        id="dropdownNavbar"
+                                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                                    >
+                                        <ul
+                                            class="py-4 text-sm text-gray-700 dark:text-gray-400"
+                                            aria-labelledby="dropdownLargeButton"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    >Features</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    >Integrations</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    >Blog Details</a
+                                                >
+                                            </li>
+                                        </ul>
+                                        <div class="py-1">
+                                            <a
+                                                href="#"
+                                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                                >404 Page</a
+                                            >
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-item">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-item">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-item">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-item">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="">
+                                <a
+                                    href="#"
+                                    class="text-sm px-2 py-1 transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo rounded-full"
+                                    >Login</a
+                                >
+                                <a
+                                    href="#"
+                                    class="rounded-full text-center transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:outline-none focus-visible:shadow-outline-indigo px-4 py-2 text-sm bg-indigo-600 text-white hover:bg-indigo-800 inline-flex items-center group gap-px"
+                                >
+                                    <span>Try for Free</span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                            clip-rule="evenodd"
+                                        ></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button
+                                data-collapse-toggle="navbar-sticky"
+                                type="button"
+                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                aria-controls="navbar-sticky"
+                                aria-expanded="false"
+                            >
+                                <span class="sr-only">Open main menu</span>
+                                <svg
+                                    class="w-4 h-4 text-gray-800"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 17 14"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M1 1h15M1 7h15M1 13h15"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </div>
-        </div>
-      </section>
+        </header>
 
-      <!-- MORE FEATURE -->
-      <section class="more-feature"></section>
+        <main class="main">
+            <!-- BANNER -->
+            <section class="banner"></section>
 
-      <!-- SHORT DESC -->
-      <section class="short-desc text-center">
-        <div class="title">
-          <h1 class="text-5xl text-white">Build faster websites.</h1>
-          <p class="text-xl text-gray-300 mt-3">
-            Pull content from anywhere and serve it fast with Astro's next-gen
-            island architecture.
-          </p>
-        </div>
-        <div class="but">
-          <button class="">Sign up for a 14-day Trial</button>
-        </div>
-      </section>
-    </main>
+            <!-- PACKAGE -->
+            <section class="package"></section>
 
-    <!-- FOOTER -->
-    <footer class="footer"></footer>
-  </body>
+            <!-- CLIENT -->
+            <section class="client"></section>
+
+            <!-- FEATURE -->
+            <section class="feature">
+                <div class="container">
+                    <div class="title">
+                        <h1 class="text-4xl font-bold">
+                            Everything you need to
+                            <span class="text-4xl primary-color font-bold"
+                                >start a website</span
+                            >
+                        </h1>
+                        <p class="text-xl text-gray-600 mt-3">
+                            Astro comes batteries included. It takes the best
+                            parts of state-of-the-art tools and adds its own
+                            innovations.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <div class="image">
+                            <img src="./images/package-1.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MORE FEATURE -->
+            <section class="more-feature"></section>
+
+            <!-- SHORT DESC -->
+            <section class="short-desc text-center">
+                <div class="title">
+                    <h1 class="text-5xl text-white">Build faster websites.</h1>
+                    <p class="text-xl text-gray-300 mt-3">
+                        Pull content from anywhere and serve it fast with
+                        Astro's next-gen island architecture.
+                    </p>
+                </div>
+                <div class="but">
+                    <button class="">Sign up for a 14-day Trial</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer"></footer>
+
+        <!-- FLOWBITE -->
+        <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    </body>
 </html>
