@@ -25,6 +25,10 @@ html {
     padding: 0 50px;
 }
 
+.header-active {
+    @apply py-2 bg-white/80 border-gray-200 backdrop-blur-lg;
+}
+
 /* màu chính */
 .primary-color {
     color: #4338ca;

@@ -1,3 +1,4 @@
+// Click
 let dropdownBtn = document.querySelector('a[data-dropdown="dropdown-menu"]');
 let dropdownMenu = document.querySelector("#dropdown-menu");
 
@@ -15,3 +16,14 @@ navbarStickyBtn.onclick = function (e) {
     this.querySelector(".astronav-close-icon").classList.toggle("hidden");
     this.querySelector(".astronav-open-icon").classList.toggle("hidden");
 };
+
+// Scroll
+const topThreshold = 10,
+    header = document.querySelector("header.header");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > topThreshold) {
+        header.classList.add("header-active");
+    } else {
+        header.classList.remove("header-active");
+    }
+});
