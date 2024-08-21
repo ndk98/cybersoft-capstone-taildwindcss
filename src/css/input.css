@@ -21,8 +21,7 @@ html {
 
 /* Tạo container chung để căn giữa cả màn hình */
 .container {
-    @apply mx-auto py-10;
-    padding: 0 50px;
+    @apply mx-auto;
 }
 
 .header-active {
