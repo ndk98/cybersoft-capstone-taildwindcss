@@ -19,11 +19,6 @@ html {
         apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
 }
 
-/* Tạo container chung để căn giữa cả màn hình */
-.container {
-    @apply mx-auto;
-}
-
 .header-active {
     @apply py-2 bg-white/80 border-gray-200 backdrop-blur-lg;
 }
