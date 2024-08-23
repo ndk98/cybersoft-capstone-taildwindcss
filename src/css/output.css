@@ -1149,6 +1149,26 @@ input:checked + .toggle-bg {
   top: 2.5rem;
 }
 
+.right-56 {
+  right: 14rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1811,6 +1831,11 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-indigo-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 219 254 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
@@ -1830,6 +1855,18 @@ input:checked + .toggle-bg {
 .from-purple-100 {
   --tw-gradient-from: #EDEBFE var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(237 235 254 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-200 {
+  --tw-gradient-from: #CDDBFE var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(205 219 254 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-purple-200 {
+  --tw-gradient-from: #DCD7FE var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(220 215 254 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2747,14 +2784,6 @@ html {
     width: auto;
   }
 
-  .lg\:flex-none {
-    flex: none;
-  }
-
-  .lg\:flex-auto {
-    flex: 1 1 auto;
-  }
-
   .lg\:basis-1\/3 {
     flex-basis: 33.333333%;
   }
@@ -2777,10 +2806,6 @@ html {
 
   .lg\:basis-3\/4 {
     flex-basis: 75%;
-  }
-
-  .lg\:basis-3\/5 {
-    flex-basis: 60%;
   }
 
   .lg\:grid-cols-3 {
@@ -2809,16 +2834,6 @@ html {
 
   .lg\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .lg\:gap-x-10 {
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
-  }
-
-  .lg\:gap-x-16 {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
   }
 
   .lg\:rounded-md {
@@ -2898,18 +2913,6 @@ html {
 }
 
 @media (min-width: 1280px) {
-  .xl\:flex {
-    display: flex;
-  }
-
-  .xl\:basis-2\/4 {
-    flex-basis: 50%;
-  }
-
-  .xl\:justify-around {
-    justify-content: space-around;
-  }
-
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -2917,16 +2920,6 @@ html {
 
   .xl\:tracking-tighter {
     letter-spacing: -0.05em;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:basis-3\/4 {
-    flex-basis: 75%;
-  }
-
-  .\32xl\:basis-2\/4 {
-    flex-basis: 50%;
   }
 }
 
